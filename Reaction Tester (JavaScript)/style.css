@@ -1,0 +1,19 @@
+#shape {
+
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	border: none;
+	border-radius: 0%;
+	display: none;
+	Position: relative;
+	top: 50px;
+	left: 100px;
+
+}
+
+body {
+
+	font-family: Arial;
+			
+}
