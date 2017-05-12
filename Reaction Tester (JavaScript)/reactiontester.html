@@ -35,14 +35,20 @@
 		<h1>Test Your Reactions!</h1>
 		
 		<p>Click on the boxes and circles as quickly as you can!</p>
+
+		<p><b>Your total times: <span id = "record"></span></b></p>
 		
-		<p><b>Your time: </b><span id = "time"></span></p>
-		
+		<p><b>Your average time: <span id = "average"></span></b></p>
+
+		<p><b>Your time: <span id = "time"></span></b></p>
+
 		<button id = "shape"></button>
 
 		<script type = "text/javascript">
 
 			var start = new Date().getTime();
+
+			var timeRecord = new Array();			
 
 			function makeShape() {
 	
@@ -87,6 +93,8 @@
 			
 			respawnShape();
 
+			var total = 0;
+
 			document.getElementById("shape").onclick = function() {
 			
 				document.getElementById("shape").style.display = "none";
@@ -95,6 +103,18 @@
 				var timeTaken = (end - start) / 1000;
 				
 				document.getElementById("time").innerHTML = timeTaken + " seconds";
+
+				timeRecord.push(timeTaken);
+
+				total += timeTaken;
+		
+				var avgTime = total / timeRecord.length;
+
+				var spacedRecord = timeRecord.join(", ");
+
+				document.getElementById("record").innerHTML = spacedRecord.toString();
+
+				document.getElementById("average").innerHTML = avgTime;				
 
 				respawnShape();
 
