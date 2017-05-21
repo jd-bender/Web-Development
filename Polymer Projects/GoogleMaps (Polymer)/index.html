@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>GoogleMaps</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel = "import" href = "bower_components/google-map/google-map.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <google-map latitude = "38.575764" longitude = "-121.478851" zoom = "15">
+    <google-map-marker latitude = "38.575764" longitude = "-121.478851" title = "home" draggable = "true">
+    </google-map-marker>
+    <google-map-marker latitude = "38.5" longitude = "-121.4" title = "work" draggable = "true">
+    </google-map-marker>
+  </google-map>
+  
+</body>
+</html>

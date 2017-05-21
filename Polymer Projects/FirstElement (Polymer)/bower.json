@@ -1,0 +1,11 @@
+{
+  "name": "FirstElement",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.2",
+    "iron-input": "PolymerElements/iron-input#^1.0.7"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.5"
+  }
+}
