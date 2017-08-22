@@ -1,0 +1,24 @@
+{
+  "name": "costtree",
+  "homepage": "https://github.com/jd-bender/Web-Development",
+  "authors": [
+    "Jake Bender <jdbender64@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.0.2",
+    "gold-email-input": "^1.0.9"
+  },
+  "resolutions": {
+    "polymer": "^1.1.0"
+  }
+}
